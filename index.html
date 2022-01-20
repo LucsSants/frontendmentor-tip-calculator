@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="main-card">
+      <div class="info-card">
+        <div id="form">
+          <form action="">
+            <div class="input-custom">
+              <label for="bill" >Bill</label>
+              <input
+              type="number"
+              id="bill"
+              name="bill"
+              placeholder="$0.00"
+              />
+            </div>
+
+            <div class="input-select">
+              <label for="tip-percentage" >Select tip %</label>
+              <input type="radio" id="5" name="tip-percentage" value="5"> 
+              <label for="5">5%</label>
+              <input type="radio" id="10" name="tip-percentage" value="10"> 
+              <label for="10">10%</label>
+              <input type="radio" id="15" name="tip-percentage" value="15"> 
+              <label for="15">15%</label>
+              <input type="radio" id="25" name="tip-percentage" value="25"> 
+              <label for="25">25%</label>
+              <input type="radio" id="50" name="tip-percentage" value="50">
+              <label for="50">50%</label>
+              <input type="number" id="tip-percentage" name="tip-percentage" placeholder="Custom">
+
+            </div>
+
+
+            <div class="input-custom">
+              <label for="number-of-people" >Number of people</label>
+              <input
+              onkeydown= "return false"
+              type="number"
+              id="number-of-people"
+              min="1"
+              max="999"
+              step="1"
+              value="0"
+              name="number-of-people"
+              placeholder="0"
+              />
+            </div>
+
+
+          </form>
+        </div>
+      </div>
+      <div class="result-card">
+
+      </div>
+    </div>
+
+
+
+  </main>
+
+  Bill
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
+
+
+<!-- <form action="/action_page.php">
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+  <input type="submit" value="Submit">
+</form> -->
