@@ -9,9 +9,131 @@
 
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: var(--bg);
   font-family: 'Space Mono', monospace;
 
 }
+
+main{
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+.main-card{
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 50%;
+  height: 70%;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-card{
+  
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 42%;;
+  height: 20rem;
+}
+
+input {
+  font-family: 'Space Mono', monospace;
+  background: var(--very-light-cyan);
+  outline: none;
+}
+
+.input-wrapper {
+  margin: 2px;
+  height: 2.6rem;
+  background: var(--very-light-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3rem;
+}
+
+.input-custom input {
+  width: 85%;
+  height: 100%;
+  border: none;
+  border-radius: 0.3rem;
+  align-items: center;
+  text-align: right;
+  
+}
+
+.input-select input{
+  visibility: hidden;
+}
+
+.result-card{
+  background: var(--dark-cyan);
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 42%;
+  height:20rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.tip-amount {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  height: 80px;
+  margin: 10px;
+}
+
+.title {
+  color: white;
+  margin: 0;
+  
+}
+
+.title small {
+  opacity: 0.5;
+}
+
+.result-value {
+  color: var(--strong-cyan);
+  font-size: 2.5rem;
+}
+
+.button {
+  text-decoration: none;
+  background: var(--strong-cyan);
+  color: var(--dark-cyan);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border-radius: 8px;
+  margin-top: 20%;
+}
+
+
+
+
 
